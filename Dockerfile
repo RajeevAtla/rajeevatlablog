@@ -6,4 +6,4 @@ COPY . .
 RUN rustup target add wasm32-unknown-unknown
 RUN cargo install dioxus-cli
 RUN dx build --features web --platform fullstack --release --verbose
-RUN dx serve --platform fullstack --verbose
+CMD dx serve --platform fullstack --verbose
